@@ -1,12 +1,12 @@
 import React from 'react'
 import Article from './Article'
-import blogData from '../data/blog'
+// import blogData from '../data/blog'
 
-function ArticleList() {
+function ArticleList({posts}) {
 
   // JS code to loop through blogData and display it in form of articles 
   // when using map to loop we must pass in an id, coz that is the syntax .
-    const  article = blogData.posts.map((blogs) => (
+    const  article = posts.map((blogs) => (
       <Article 
       key = {blogs.id} 
       title = {blogs.title}  
