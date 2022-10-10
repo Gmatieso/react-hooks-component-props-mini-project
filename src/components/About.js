@@ -1,6 +1,6 @@
 import React from 'react'
 
-function About({Image = "https://via.placeholder.com/215",about}) {
+function About({about,Image = "https://via.placeholder.com/215"}) {
     
   return (
     <div>
